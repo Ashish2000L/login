@@ -1,0 +1,32 @@
+package com.example.application;
+
+import androidx.appcompat.app.AppCompatActivity;
+
+
+
+import android.os.Bundle;
+
+public class MainActivity extends AppCompatActivity {
+
+
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_main);
+        //getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);  //THIS IS ONW OF THE WAY, ANOTHER WAY IS IN THE XML FILE BY ADDING KEEPSCREENON="TRUE"
+
+    }
+}
+/*FEW DETAILS ABOUT XML FILES
+ *  <com.spark.submitbutton.SubmitButton/>- THIS FILE IS FOR THE ANIMATED BUTTON AND ITS DEPENDENCIE IS IN BUILT.GRADEL
+ *  <include layout="@layout/custom_toolbar"/>-THIS IS TO INCLUDE THE CUSTOM TOOL BAR IN THE MAIN.XML FILE
+    *  THE CUSTOM_TOOLBAR.XML IN LAYOUTS CONTAIN ALL TEH DETAILS REGARDING THE DETALS OF FROM ROUUND IMAGE TO NAME OF APP
+ *  MY_ANIMATION.XML PROVIDE ALL TEH DETAILS ABOUT GRADEL ANIMATION
+    *   IT CONTAIN ITEMS WHICH IT WILL CONTAIN AS AN ADDRESS OF FILES LOCATED IN DRAWABLE FOLDER
+    *   IN THE RECENT DATA THERE ARE THREE ITEMS WHOSE FILES ARE LOCATED IN DRAWABLE FOLDER, FIRST_GRAD.XML,SECOND_GRAD.XML,THIRS_GRAD.XML
+    *   THESE FILES CONTAIN FIRST STARTCOLOR AND SECOND ENDCOLOR,
+    *   ANIMATION OF THESE COMMANDED TO BE START IN MAINACTIVITY.JAVA FILE, BY ANIAMTIONDRAWBLE.START();
+
+ */

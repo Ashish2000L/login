@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".test"
+    android:id="@+id/mylayout"
+    android:keepScreenOn="true"
+    android:layout_gravity="center"
+    android:background="@drawable/my_animation">
+
+
+    <include layout="@layout/custom_toolbar"/>
+
+    <com.spark.submitbutton.SubmitButton
+        android:id="@+id/btnsubmit"
+        android:layout_width="100dp"
+        android:layout_height="25dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginEnd="113dp"
+        android:layout_marginBottom="195dp"
+        android:gravity="center"
+        android:text="Submit"
+        android:textColor="@color/gray"
+        app:sub_btn_background="@color/white"
+        app:sub_btn_duration="3000"
+        app:sub_btn_line_color="#64DD17"
+        app:sub_btn_ripple_color="#64DD17"
+        app:sub_btn_tick_color="@color/white" />
+
+</RelativeLayout>

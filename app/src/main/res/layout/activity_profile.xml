@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/login_background_gradle"
+    tools:context=".profile">
+
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="90dp"
+        android:visibility="gone"
+        android:id="@+id/progress_bars"/>
+    <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:id="@+id/profile_image"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profile_image"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="Display Name"
+        android:id="@+id/Disp_name"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Disp_name"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="Email"
+        android:id="@+id/tv_email"
+        android:textSize="30sp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tv_email"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="center"
+        android:hint="ID"
+        android:id="@+id/Id"
+        android:textSize="30sp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/Id"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/corners_of_button"
+        android:backgroundTint="@color/colorac"
+        android:textColor="@color/white"
+        android:text="SignOut"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/btnSignout"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/btnSignout"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="80dp"
+        android:layout_marginLeft="80dp"
+        android:background="@drawable/corners_of_button"
+        android:backgroundTint="@color/white"
+        android:textColor="@color/black"
+        android:text="Delete Account"
+        style="@style/TextAppearance.AppCompat.Large"
+        android:id="@+id/btnDelete"/>
+</RelativeLayout>
